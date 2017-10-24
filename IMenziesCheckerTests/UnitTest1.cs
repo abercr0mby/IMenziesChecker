@@ -3,12 +3,16 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace IMenziesCheckerTests
 {
     [TestClass]
-    public class UnitTest1
+    public class MenziesApiCheckerTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CreatingACheckerIsNotNull()
         {
-            Assert.IsTrue(false);
+            var checker = new IMenziesAPIChecker();
+            Assert.IsNotNull(checker);
         }
+
+        [TestMethod]
+        public void 
     }
 }
